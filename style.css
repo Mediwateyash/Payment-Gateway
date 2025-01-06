@@ -49,6 +49,10 @@ button:hover {
     display: none;
 }
 
+.popup p {
+    margin: 0;
+}
+
 .popup.show {
     display: block;
 }
