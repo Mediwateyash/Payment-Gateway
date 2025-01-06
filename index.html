@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="/Payment-Gateway/style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Payment Gateway</h1>
+            <form id="paymentForm">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number" required><br>
+    
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="date" id="expiryDate" name="expiryDate" required><br>
+    
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required><br>
+    
+                <button type="button" id="generateOTP">Generate OTP</button>
+            </form>
+            <div id="otpPopup" class="popup">
+                <p id="otpContent"></p>
+            </div>
+            <div id="otpVerification">
+                <label for="otp">Enter OTP:</label>
+                <input type="text" id="otp" name="otp" placeholder="Enter OTP" required><br>
+                <button type="button" id="verifyOTP">Verify OTP</button>
+            </div>
+            <div id="paymentConfirmation" style="display: none;">
+                <p>Thank you for your payment. Your order is in progress.</p>
+            </div>
+     </div>
+        <script src="/Payment-Gateway/app.js"></script>
+</body>
+</html>
